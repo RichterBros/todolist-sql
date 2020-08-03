@@ -1,4 +1,4 @@
-@{
+@* @{
   Layout = "_Layout";
 }
 
@@ -15,7 +15,7 @@
 }
 
 <ul>
-  @foreach(Item item in @ViewBag.ItemList)
+  @foreach(Item item in @Model.Items)
   {
     <li>Description: @item.Description</li>
   }
@@ -25,4 +25,4 @@
 <p>@Html.ActionLink("Back to list", "Index")</p>
 
 <p>@Html.ActionLink("Edit Category", "Edit", new { id = Model.CategoryId })</p>
-<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</p>
+<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</p> *@
