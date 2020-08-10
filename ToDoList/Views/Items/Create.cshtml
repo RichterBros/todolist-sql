@@ -7,12 +7,14 @@
 <h4>Add a new task</h4>
 @using (Html.BeginForm())
 {
+  <div class="form-group">
     @Html.LabelFor(model => model.Description)
     @Html.TextBoxFor(model => model.Description)
-
+  </div>
+  <div class="form-group">
     @Html.Label("Select category")
     @Html.DropDownList("CategoryId")
-
+  </div>
     <input type="submit" value="Add new item" class="btn btn-default" />
 }
 <p>@Html.ActionLink("Show all items", "Index")</p>
